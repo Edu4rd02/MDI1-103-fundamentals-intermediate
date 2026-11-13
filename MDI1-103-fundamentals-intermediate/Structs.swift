@@ -125,4 +125,61 @@ import Playgrounds
     )
     
     book3.printDetails()
+    
+    // MARK: - Session # 2
+    print("\n-- Movie Struct --")
+    
+    // Struct definition
+    struct Movie {
+        var title: String
+        var director: String
+        var year: Int
+        var genre: String?
+        
+        func printSummary(){
+            print("\(title) (\(year)) directed by \(director)")
+        }
+    }
+    
+    let movie1 = Movie(
+        title: "Interstellar",
+        director: "Christopher Nolan",
+        year: 2014,
+        genre: "Sci-fi"
+    )
+    
+    let movie2 = Movie(
+        title: "Spider-man Across the Spider-Verse",
+        director: "Kemp Powers",
+        year: 2023,
+        genre: "Action"
+    )
+    
+    let movie3 = Movie(
+        title: "Project Hail Mary",
+        director: "Phil Lord",
+        year: 2026,
+        genre: "Adventure"
+    )
+    
+    let movie4 = Movie(
+        title: "Toy Story 5",
+        director: "Andrew Staton",
+        year: 2026,
+        genre: "Comedy"
+    )
+    
+    let movie5 = Movie(
+        title: "Clayface",
+        director: "James Watkins",
+        year: 2026,
+        genre: "Action"
+    )
+    
+    var movies:[Movie] = [movie1, movie2, movie3, movie4, movie5]
+    
+    movies.forEach{ movie in
+//        print(movie.year)
+        movie.printSummary()
+    }
 }

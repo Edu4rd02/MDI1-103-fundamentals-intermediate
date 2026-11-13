@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-struct Dish {
-    var name: String
-    var category: String
-    var price: Double
-    var description: String
-    var imageName: String
-}
-
 struct DishDetailView: View {
     let dish = Dish(
         name: "Greek Salad",
